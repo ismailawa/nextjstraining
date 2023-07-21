@@ -1,25 +1,44 @@
 import React from 'react';
-import Image from 'next/image';
 
-function page() {
+import FormScreen from '@/components/FormScreen';
+import ImageScreen from '@/components/ImageScreen';
+
+function Login() {
   return (
     <main className='flex min-h-screen'>
-      <div className='flex flex-col w-1/2 bg-slate-500'>
-        <div>Makaranta</div>
-        <div className='flex flex-1 justify-center items-center'>form</div>
-        <div>Powered by MeHub</div>
-      </div>
-      <div className=' lg:flex  w-1/2 hidden bg-gray-300 relative'>
-        <Image
-          src={'/images/login1.jpg'}
-          alt='login'
-          objectFit='cover'
-          width='1000'
-          height={1000}
-        />
-      </div>
+      <FormScreen
+        title='Welcome back'
+        subTitle=' Welcome back! Please enter your details'
+        action='Sign in'
+      >
+        <div className='flex flex-col gap-3'>
+          <div className='flex flex-col gap-3 w-full'>
+            <div>Email</div>
+            <input
+              type='email'
+              name='email'
+              required
+              id='email'
+              placeholder='Enter your email address'
+              className='w-full ring-1 ring-gray-500 focus:ring-green-500 rounded-lg p-3 placeholder:text-lg text-xl'
+            />
+          </div>
+          <div className='flex flex-col gap-3 w-full'>
+            <div>Password</div>
+            <input
+              type='password'
+              name='password'
+              required
+              id='password'
+              placeholder='Enter your password'
+              className='w-full ring-1 ring-gray-500 focus:ring-green-500 rounded-lg p-3 placeholder:text-lg text-xl'
+            />
+          </div>
+        </div>
+      </FormScreen>
+      <ImageScreen src={'/images/login1.jpg'} />
     </main>
   );
 }
 
-export default page;
+export default Login;
