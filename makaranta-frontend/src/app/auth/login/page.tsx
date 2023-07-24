@@ -21,7 +21,7 @@ function Login() {
   };
 
   return (
-    <main className='flex min-h-screen'>
+    <main className='flex min-h-screen w-full'>
       <FormScreen
         title='Welcome back'
         subTitle=' Welcome back! Please enter your details'

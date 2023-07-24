@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function ImageScreen({ src }: any) {
   return (
-    <div className=' lg:flex  w-1/2 hidden bg-gray-300 relative'>
+    <div className=' lg:flex  w-1/2 hidden bg-gray-300 relative -z-10'>
       <Image src={src} alt='login' fill />
     </div>
   );

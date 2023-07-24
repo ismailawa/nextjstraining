@@ -47,7 +47,7 @@ function Register() {
   };
 
   return (
-    <main className='flex min-h-screen'>
+    <main className='flex min-h-screen w-full'>
       <FormScreen
         title='Welcome to MyMakaranta'
         subTitle='Welcome kindly Signup to access awesome contents'
