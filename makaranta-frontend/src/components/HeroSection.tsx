@@ -10,21 +10,21 @@ function HeroSection() {
           alt='image'
           height={50}
           width={50}
-          className='w-14 h-14 left-20  top-60 -z-40 absolute animate-move-up'
+          className='w-14 h-14 left-20  top-60  absolute animate-move-up'
         />
         <Image
           src={'/images/5.png'}
           alt='image'
           height={50}
           width={50}
-          className='w-14 h-14 right-56 bottom-56 -z-40 absolute animate-move-right'
+          className='w-14 h-14 right-56 bottom-56  absolute animate-move-right'
         />
-        <div className=' flex flex-col gap-4 w-[400px]'>
+        <div className=' flex flex-col gap-4 w-[500px]'>
           <h1 className=' text-xl font-bold text-green-500'>
             Welcome to MyMakaranta
           </h1>
           <h1 className=' text-6xl font-bold'>
-            Discover best classes for the best learning
+            Empower your online learning journey.
           </h1>
           <p className=' text-sm font-normal text-[#667660]'>
             We designed Connections Academy to give students all across the
